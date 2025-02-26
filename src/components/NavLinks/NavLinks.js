@@ -1,4 +1,4 @@
-import NavLinkItem from '../NavLinkItem/NavLinkItem.js';
+import NavLinkItem from '../NavLinkItem/NavLinkItem.tsx';
 
 const NAV_LINK_ITEMS = [
   { label: 'Home', url: '/' },
