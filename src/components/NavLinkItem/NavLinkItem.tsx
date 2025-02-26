@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-interface NavLinkProps extends React.ComponentProps<typeof Link> {
+interface NavLinkItemProps extends React.ComponentProps<typeof Link> {
   label: string;
   href: string;
 }
 
-export default function NavLink({ label, href }: NavLinkProps) {
+export default function NavLinkItem({ label, href }: NavLinkItemProps) {
   const pathname = usePathname();
   const isActive = pathname === href;
 

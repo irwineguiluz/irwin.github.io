@@ -1,4 +1,4 @@
-import NavLinkItem from '../NavLinkItem/NavLinkItem.tsx';
+import NavLinkItem from '../NavLinkItem/NavLinkItem';
 
 const NAV_LINK_ITEMS = [
   { label: 'Home', url: '/' },
@@ -6,7 +6,11 @@ const NAV_LINK_ITEMS = [
   { label: 'Contact', url: '/contact' },
 ];
 
-export default function NavLinks({ className }) {
+interface NavLinksProps {
+  className: string;
+}
+
+export default function NavLinks({ className } : NavLinksProps) {
   return (
     <nav className={className}>
       {NAV_LINK_ITEMS.map((item) => (

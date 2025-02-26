@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 import ThemeToggle from '../ThemeToggle/ThemeToggle.js';
-import NavLinks from '../NavLinks/NavLinks.js';
+import NavLinks from '../NavLinks/NavLinks';
 
 export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
