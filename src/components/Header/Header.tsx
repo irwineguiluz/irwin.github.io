@@ -23,10 +23,6 @@ export default function Header() {
     setMenuIsOpen(!menuIsOpen);
   }
 
-  function handleSwitchToggle() {
-    console.log('toggle');
-  }
-
   return (
     <header className="bg-white p-4 dark:bg-black dark:text-white">
       <div className="max-w-[1140px] mx-auto grid grid-cols-5 sm:grid-cols-3 items-center">
